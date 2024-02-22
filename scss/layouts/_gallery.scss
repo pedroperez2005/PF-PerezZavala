@@ -1,0 +1,25 @@
+.gallery {
+    display: grid;
+    grid-template-areas:
+        'b1 b2 b3'
+        'b4 b5 b6'
+        'b7 b8 b9'
+        'b10 b11 b12';
+    row-gap: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    justify-content: space-around;
+
+    img, .box{
+        width: 350px;
+    }
+}
+
+
+.box {
+    box-shadow: 2px 2px 6px 2px rgba(50, 50, 50, 0.317);
+    &:hover{
+        filter: brightness(110%);
+        transition: 0.3s;
+    }
+}

@@ -1,0 +1,67 @@
+.bg-home {
+    background-color: $color-gray;
+    background-image: url(../assets/images/ninos-participando-gris.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.btn-primary {
+    background-color: $color-brown;
+    border: 3px solid $color-brown;
+    font-weight: bold;
+
+    &:hover{
+        background-color: transparent;
+        border: 3px solid $color-brown;
+        color: black;
+        font-weight: bold;
+    }
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    background-color: transparent;
+    border: 3px solid $color-brown;
+    color: black;
+    font-weight: bold;
+}
+
+.enviar {
+    background-color: $color-brown;
+    border: 2px solid $color-brown;
+    padding: 7px 18px;
+    border: 2px solid $color-brown;
+    border-radius: 5px;
+    color: #fff;
+
+    &:hover{
+        background-color: #583f38;
+        border: 2px solid #583f38;
+    }
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.294);
+}
+
+form {
+    width: 500px;
+    min-width: 10vh;
+}
+
+.img-quiero-ayudar {
+    filter: brightness(70%);
+    max-height: 700px;
+}
+
+.img-gray {
+    filter: grayscale(100);
+
+    &:hover{
+        filter: grayscale(0);
+        transition: 0.5s;
+    }
+}

@@ -1,0 +1,14 @@
+.maps{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-maps {
+    background-color: $color-gray;
+    background-image: url(../assets/images/ubi.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
