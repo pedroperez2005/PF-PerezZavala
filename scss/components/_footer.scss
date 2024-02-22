@@ -1,9 +1,9 @@
 footer a{
     text-decoration: none;
-    color: #fff;
+    color: $color-white;
 }
 
 .bg-gray {
-    background-color: $color-gray;
-    color: #fff;
+    background: linear-gradient(to bottom, $color-gray, rgb(140, 140, 140));
+    color: $color-white;
 }

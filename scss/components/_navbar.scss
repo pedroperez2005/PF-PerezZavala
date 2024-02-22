@@ -1,10 +1,19 @@
-.container-fluid img {
-    width: 100px;
-    margin-left: 20px;
+.container-fluid {
+    img{
+        width: 100px;
+        margin-left: 20px;
+
+        &:hover{
+            transition: .5s;
+            transform: rotate(360deg);
+        }
+    }
+
+    
 }
 
 .nav-link {
-    color: #fff;
+    color: $color-white;
     font-size: 20px;
     font-weight: bold;
 

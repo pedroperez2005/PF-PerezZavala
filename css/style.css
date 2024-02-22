@@ -7,6 +7,10 @@ body {
   width: 100px;
   margin-left: 20px;
 }
+.container-fluid img:hover {
+  transition: 0.5s;
+  transform: rotate(360deg);
+}
 
 .nav-link {
   color: #fff;
@@ -31,10 +35,22 @@ footer a {
 }
 
 .bg-gray {
-  background-color: #393E46;
+  background: linear-gradient(to bottom, #393E46, rgb(140, 140, 140));
   color: #fff;
 }
 
+.carousel {
+  animation: carousel 1s 1 linear;
+}
+
+@keyframes carousel {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .bg-home {
   background-color: #393E46;
   background-image: url(../assets/images/ninos-participando-gris.png);
@@ -100,6 +116,18 @@ form {
   transition: 0.5s;
 }
 
+span {
+  background: linear-gradient(125deg, #674A42, rgb(186, 178, 9));
+  color: transparent;
+  background-clip: text;
+  font-weight: bolder;
+}
+
+.card:hover {
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
 .gallery {
   display: grid;
   grid-template-areas: "b1 b2 b3" "b4 b5 b6" "b7 b8 b9" "b10 b11 b12";
@@ -117,7 +145,6 @@ form {
 }
 .box:hover {
   filter: brightness(110%);
-  transition: 0.3s;
 }
 
 .bg-form {
