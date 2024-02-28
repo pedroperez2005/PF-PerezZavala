@@ -13,10 +13,8 @@
 }
 
 .bg-home {
-    background-color: $color-gray;
+    @include bg;
     background-image: url(../assets/images/ninos-participando-gris.png);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .btn-primary {
@@ -87,7 +85,11 @@ span {
     font-weight: bolder;
 }
 
-.card:hover {
-    transition: .5s;
-    transform: scale(1.05);
+.card-index {
+    max-width: 700px;
+
+    &:hover {
+        transition: .5s;
+        transform: scale(1.05);
+    }
 }

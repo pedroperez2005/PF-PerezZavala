@@ -7,10 +7,8 @@
 }
 
 .bg-maps {
-    background-color: $color-gray;
+    @include bg;
     background-image: url(../assets/images/ubi.png);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 iframe{

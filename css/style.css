@@ -1,6 +1,5 @@
 body {
   background-color: #d0d1d1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-fluid img {
@@ -53,9 +52,9 @@ footer a {
 }
 .bg-home {
   background-color: #393E46;
-  background-image: url(../assets/images/ninos-participando-gris.png);
   background-size: cover;
   background-attachment: fixed;
+  background-image: url(../assets/images/ninos-participando-gris.png);
 }
 
 .btn-primary {
@@ -123,7 +122,10 @@ span {
   font-weight: bolder;
 }
 
-.card:hover {
+.card-index {
+  max-width: 700px;
+}
+.card-index:hover {
   transition: 0.5s;
   transform: scale(1.05);
 }
@@ -149,9 +151,9 @@ span {
 
 .bg-form {
   background-color: #393E46;
-  background-image: url(../assets/images/bg-contact.png);
   background-size: cover;
   background-attachment: fixed;
+  background-image: url(../assets/images/bg-contact.png);
 }
 
 .maps {
@@ -164,9 +166,13 @@ span {
 
 .bg-maps {
   background-color: #393E46;
-  background-image: url(../assets/images/ubi.png);
   background-size: cover;
   background-attachment: fixed;
+  background-image: url(../assets/images/ubi.png);
+}
+
+iframe {
+  border: 0;
 }
 
 @media (max-width: 1200px) {
@@ -182,6 +188,14 @@ span {
   .gallery {
     grid-template-areas: "box";
   }
+}
+.card-quienes-somos {
+  max-width: 800px;
+}
+
+.card-quienes-somos:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=style.css.map */

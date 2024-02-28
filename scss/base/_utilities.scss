@@ -1,0 +1,5 @@
+@mixin bg{
+    background-color: $color-gray;
+    background-size: cover;
+    background-attachment: fixed;
+}
