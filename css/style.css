@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 body {
   background-color: #d0d1d1;
+  font-family: "Outfit", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-fluid img {
@@ -34,7 +36,7 @@ footer a {
 }
 
 .bg-gray {
-  background: linear-gradient(to bottom, #393E46, rgb(140, 140, 140));
+  background: linear-gradient(to left, #393E46, rgb(140, 140, 140));
   color: #fff;
 }
 
@@ -116,7 +118,7 @@ form {
 }
 
 span {
-  background: linear-gradient(125deg, #674A42, rgb(186, 178, 9));
+  background: linear-gradient(to bottom, #674A42, rgb(186, 178, 9));
   color: transparent;
   background-clip: text;
   font-weight: bolder;
@@ -124,9 +126,9 @@ span {
 
 .card-index {
   max-width: 700px;
+  transition: transform 0.5s ease;
 }
 .card-index:hover {
-  transition: 0.5s;
   transform: scale(1.05);
 }
 
@@ -191,10 +193,10 @@ iframe {
 }
 .card-quienes-somos {
   max-width: 800px;
+  transition: transform 0.5s ease;
 }
 
 .card-quienes-somos:hover {
-  transition: 0.5s;
   transform: scale(1.05);
 }
 

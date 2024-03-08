@@ -8,7 +8,6 @@
             transform: rotate(360deg);
         }
     }
-
     
 }
 
@@ -20,6 +19,19 @@
     &:hover{
         color: #ccc;
     }
+    // &::before, &::after{
+    //         border-bottom: 2px solid $color-white;
+    // }
+    // &::before{
+    //     bottom: -5px;
+    //     width: 90%;
+    //     right: 0;
+    // }
+    // &::after{
+    //     bottom: -10px;
+    //     width: 60%;
+    //     left: 0;
+    // }
 }
 
 .navbar-toggler {

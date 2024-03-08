@@ -1,8 +1,9 @@
 .card-quienes-somos{
     max-width: 800px;
+    transition: transform .5s ease;
+
 }
 
 .card-quienes-somos:hover {
-    transition: .5s;
     transform: scale(1.05);
 }

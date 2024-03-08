@@ -79,7 +79,7 @@ form {
 }
 
 span {
-    background: linear-gradient(125deg, $color-brown, rgb(186, 178, 9));
+    background: linear-gradient(to bottom, $color-brown, rgb(186, 178, 9));
     color: transparent;
     background-clip: text;
     font-weight: bolder;
@@ -87,9 +87,10 @@ span {
 
 .card-index {
     max-width: 700px;
+    transition: transform .5s ease;
+
 
     &:hover {
-        transition: .5s;
         transform: scale(1.05);
     }
 }

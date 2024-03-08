@@ -1,5 +1,7 @@
-@mixin bg{
+@mixin bg {
     background-color: $color-gray;
     background-size: cover;
     background-attachment: fixed;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
