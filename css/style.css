@@ -17,13 +17,47 @@ body {
   color: #fff;
   font-size: 20px;
   font-weight: bold;
+  position: relative;
 }
 .nav-link:hover {
   color: #ccc;
 }
+.nav-link::before, .nav-link::after {
+  content: "--";
+  color: transparent;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  transition: 0.2s;
+  opacity: 0;
+}
+.nav-link::before {
+  bottom: 5px;
+  right: 0;
+  width: 90%;
+}
+.nav-link::after {
+  bottom: 0px;
+  left: 0;
+  width: 60%;
+}
+.nav-link:hover::before, .nav-link.activo::before {
+  opacity: 1;
+  width: 70%;
+}
+.nav-link:hover::after, .nav-link.activo::after {
+  opacity: 1;
+  width: 40%;
+}
+.nav-link:focus {
+  color: #fff;
+}
 
 .navbar-toggler {
   border: 1px solid white;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+  border: 3px solid #fff;
 }
 
 .bg-brown {
@@ -189,6 +223,18 @@ iframe {
   }
   .gallery {
     grid-template-areas: "box";
+  }
+  .nav-link::after {
+    content: none;
+  }
+  .nav-link::before {
+    bottom: 5px;
+    left: 0;
+    width: 0;
+  }
+  .nav-link:hover::before, .nav-link.activo::before {
+    opacity: 1;
+    width: 50%;
   }
 }
 .card-quienes-somos {

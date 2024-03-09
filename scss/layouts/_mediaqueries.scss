@@ -13,4 +13,21 @@
     .gallery {
         grid-template-areas: 'box';
     }
+
+    .nav-link::after{
+        content: none;
+    }
+
+    .nav-link::before{
+        bottom: 5px;
+        left: 0;
+        width: 0;
+    }
+
+    .nav-link:hover::before, .nav-link.activo::before{
+        opacity: 1;
+        width: 50%;
+    }
+
+    
 }

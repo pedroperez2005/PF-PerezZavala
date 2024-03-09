@@ -15,27 +15,50 @@
     color: $color-white;
     font-size: 20px;
     font-weight: bold;
+    position: relative;
 
     &:hover{
         color: #ccc;
     }
-    // &::before, &::after{
-    //         border-bottom: 2px solid $color-white;
-    // }
-    // &::before{
-    //     bottom: -5px;
-    //     width: 90%;
-    //     right: 0;
-    // }
-    // &::after{
-    //     bottom: -10px;
-    //     width: 60%;
-    //     left: 0;
-    // }
+
+    &::before, &::after{
+        content: '--';
+        color: transparent;
+        border-bottom: 2px solid $color-white;
+        position: absolute;
+        transition: 0.2s;
+        opacity: 0;
+    }
+
+    &::before{
+        bottom: 5px;
+        right: 0;
+        width: 90%;
+    }
+    &::after{
+        bottom: 0px;
+        left: 0;
+        width: 60%;
+    }
+    &:hover::before, &.activo::before{
+        opacity: 1;
+        width: 70%;
+    }
+    &:hover::after, &.activo::after{
+        opacity: 1;
+        width: 40%;
+    }
+    &:focus{
+        color: $color-white;
+    }
 }
 
 .navbar-toggler {
     border: 1px solid white;
+    &:focus{
+        box-shadow: none;
+        border: 3px solid $color-white;
+    }
 }
 
 .bg-brown{
